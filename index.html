@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Component Example</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>A simple tooltip created with web component</h1>
+        <p>Lorem ipsum, dolor sit amet 
+            <popup-notify tip_bg="#ffcc00" tip_color="red">
+                <span slot="message">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+            </popup-notify> 
+            consectetur adipisicing elit. 
+            Atque, iure! Quos accusantium reprehenderit cupiditate labore 
+            libero, voluptatibus 
+            <popup-notify tip_color="blue">
+                <span slot="message">Another web component tooltip example!</span>
+            </popup-notify> 
+            at rerum expedita, 
+            dolorum ratione eaque neque magni dicta optio odit, 
+            placeat aspernatur?
+        </p>
+    </div>
+
+    <script src="popupNotify.js"></script>
+</body>
+</html>
